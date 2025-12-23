@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Shen | Certifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="left"><a href="index.html">Daniel Shen</a></div>
+            <button class="hamburger" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="mailto:dshen6@outlook.com" class="cta-button">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h3>Professional Certifications</h3>
+        <div class="bento-grid" style="margin-top: 20px;">
+            <div class="gallery-item" data-tilt>
+                <div class="evidence-media-wrapper"><img src="media/whmis.jpg" class="dynamic-image"></div>
+                <h4>WHMIS 2015</h4>
+            </div>
+            <div class="gallery-item" data-tilt>
+                <div class="evidence-media-wrapper"><img src="media/WorkerHealthandSafetyAwarenessin4Steps.png"
+                        class="dynamic-image"></div>
+                <h4>Health & Safety</h4>
+            </div>
+            <div class="gallery-item" data-tilt>
+                <div class="evidence-media-wrapper"><img src="media/aoda.jpg" class="dynamic-image"></div>
+                <h4>AODA</h4>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', () => document.getElementById('nav-list').classList.toggle('active'));
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+    </script>
+</body>
+
+</html>
